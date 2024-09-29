@@ -1,0 +1,20 @@
+import java.awt.Point;
+
+public class classesUtilitarias {
+
+	public static void main(String[] args) {
+		// Criando um objeto com a Classe Point com x e y coordenadas 20, 40
+		System.out.println("Classe Point: ");
+		
+		Point p = new Point(20,40);
+		
+		// Armazenando as coordenadas de x e y de p
+		int x = (int) p.getX();
+		int y = (int) p.getY();
+		System.out.println("X: " + p.getX());
+		System.out.println("Y: " + p.getY());
+		
+		// Seta as coordenadas de x e y de para (10, 60)
+		p.setLocation(10, 60);
+		
+		System.out.println("Novas coordenadas: " + p);
